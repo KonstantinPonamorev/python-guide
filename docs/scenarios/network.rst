@@ -1,4 +1,4 @@
-Networking
+Networking (Сети)
 ==========
 
 .. image:: https://farm3.staticflickr.com/2892/34151833832_6bdfd930af_k_d.jpg
@@ -6,33 +6,31 @@ Networking
 Twisted
 -------
 
-`Twisted <http://twistedmatrix.com/trac/>`_ is an event-driven networking
-engine. It can be used to build applications around many different networking
-protocols, including http servers and clients, applications using SMTP, POP3,
-IMAP or SSH protocols, instant messaging
-and `much more <http://twistedmatrix.com/trac/wiki/Documentation>`_.
+`Twisted <http://twistedmatrix.com/trac/>`_ это механизм сетей, управляемый событиями. Он может использоваться для создания приложений по многим различным сетевым сетевым протоколам, включая HTTP-серверы и клиенты, приложения, использующие протоколы SMTP, POP3, IMAP или SSH, обмен мгновенными сообщениями и многое другое <http://twistedmatrix.com/trac/wiki/Documentation>`_.
 
 PyZMQ
 -----
 
-`PyZMQ <http://zeromq.github.com/pyzmq/>`_ is the Python binding for
-`ZeroMQ <http://www.zeromq.org/>`_, which is a high-performance asynchronous
-messaging library. One great advantage of ZeroMQ is that it can be used for
-message queuing without a message broker. The basic patterns for this are:
+`PyZMQ <http://zeromq.github.com/pyzmq/>`_ это связка "Питона" для
+`ZeroMQ <http://www.zeromq.org/>`_, которая представляет собой 
+высокопроизводительную асинхронную библиотеку сообщений. Одним из 
+больших преимуществ "ZeroMQ" является то, что он может использоваться 
+для очереди сообщений без брокера сообщений. Основными шаблонами для 
+этого являются:
 
-- request-reply: connects a set of clients to a set of services. This is a
-  remote procedure call and task distribution pattern.
-- publish-subscribe: connects a set of publishers to a set of subscribers.
-  This is a data distribution pattern.
-- push-pull (or pipeline): connects nodes in a fan-out / fan-in pattern that
-  can have multiple steps, and loops. This is a parallel task distribution
-  and collection pattern.
+- request-reply (запрос-ответ): связывает набор клиентов с набором сервисов. 
+  Это удаленный вызов процедуры и шаблон распределения задач.
+- publish-subscribe (опубликование-подписка): связывает набор издателей с 
+  набором подписчиков. Это шаблон распределения данных.
+- push-pull (толкай-тяни/конвейер): соединяет узлы в шаблоне "выход/вход", 
+  которые могут иметь несколько шагов и петель. Это параллельная задача 
+  распределения и сбора.
 
-For a quick start, read the `ZeroMQ guide <http://zguide.zeromq.org/page:all>`_.
+Для быстрого начала ознакомьтесь с руководством `ZeroMQ <http://zguide.zeromq.org/page:all>`_.
 
 gevent
 ------
 
-`gevent <http://www.gevent.org/>`_ is a coroutine-based Python networking
-library that uses greenlets to provide a high-level synchronous API on top of
-the libev event loop. 
+`gevent <http://www.gevent.org/>`_ представляет собой сетевую библиотеку 
+"Питона" на основе сопрограмм, которая использует сопрограмму "greenlets" 
+для предоставления высокоуровневого синхронного API поверх цикла событий "libev".
