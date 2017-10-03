@@ -10,7 +10,7 @@ Twisted
 событиями. Он может использоваться для создания приложений по многим различным 
 сетевым сетевым протоколам, включая HTTP-серверы и клиенты, приложения, 
 использующие протоколы SMTP, POP3, IMAP или SSH, обмен мгновенными сообщениями 
-и `многое <http://twistedmatrix.com/trac/wiki/Documentation>`_.
+и `многое другое <http://twistedmatrix.com/trac/wiki/Documentation>`_.
 
 PyZMQ
 -----
